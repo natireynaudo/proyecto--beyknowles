@@ -1,0 +1,62 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  background-color: black;
+  grid-template-areas: "header header header" "div div div" "section section section" "footer footer footer"; }
+  body header {
+    background-color: black;
+    grid-area: header; }
+    body header nav {
+      background-color: black; }
+      body header nav .nav-link {
+        color: darkgoldenrod;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: bold; }
+      body header nav .navbar-brand {
+        color: darkgoldenrod;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px; }
+      body header nav .navbar-nav {
+        background-color: black; }
+      body header nav .tamLogo {
+        width: 100px; }
+      body header nav .imgBio {
+        width: 500px;
+        margin: 15px;
+        padding: 10px; }
+    body header h1 {
+      color: darkgoldenrod;
+      display: flex;
+      justify-content: center;
+      margin: 10px; }
+    body header h2 {
+      color: darkgoldenrod;
+      display: flex;
+      justify-content: center; }
+  body .contenedor {
+    grid-area: div;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body .contenedor p {
+      color: beige;
+      margin: 10px;
+      padding: 20px; }
+    body .contenedor .imgBio {
+      width: 500px;
+      margin: 15;
+      padding: 15; }
+  body section {
+    grid-area: section;
+    background-color: black; }
+    body section p {
+      color: beige; }
+    body section .titFrase {
+      text-align: right;
+      color: darkgoldenrod; }
+  body #footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    color: darkgoldenrod; }
