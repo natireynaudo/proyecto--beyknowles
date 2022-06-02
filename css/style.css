@@ -39,7 +39,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
-    body .contenedor p {
+    body .contenedor .parrafoBio {
       color: beige;
       margin: 10px;
       padding: 20px; }
@@ -60,3 +60,23 @@ body {
     display: flex;
     justify-content: center;
     color: darkgoldenrod; }
+
+/*TOURS*/
+/* MAP -GET */
+.listadoFechas, .Canciones {
+  color: beige;
+  font-size: 1rem;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center; }
+
+/*EXTEND*/
+.Canciones {
+  color: darkgoldenrod; }
+
+/* MIXIN */
+.imgTour {
+  width: 1350px;
+  margin: 10px;
+  padding: 10px; }

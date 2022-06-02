@@ -1,0 +1,34 @@
+/*TOURS*/
+
+/* MAP -GET */
+$estilo: (color: beige, tamFuente: 1rem);
+
+.listadoFechas {
+    color: map-get($estilo, color);
+    font-size: map-get($estilo, tamFuente);
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*EXTEND*/
+.Canciones {
+    @extend .listadoFechas;
+    color: darkgoldenrod;
+}
+
+/* MIXIN */
+
+@mixin imagenesTours ($tamImg, $margen, $padding){
+    width: $tamImg;
+    margin: $margen;
+    padding: $padding
+}
+
+.imgTour{
+    @include imagenesTours(1350px, 10px, 10px);
+}
+    
+//*GALERÍA*//
+
