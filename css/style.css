@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Roboto', sans-serif;
   display: grid;
@@ -80,3 +81,59 @@ body {
   width: 1350px;
   margin: 10px;
   padding: 10px; }
+
+.galeríaBey {
+  height: 400px;
+  margin: 5px; }
+
+.imagenesGaleria {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap; }
+
+.album {
+  height: 500px;
+  margin: 20px; }
+
+.algumSpotify {
+  height: 500px;
+  width: 500px;
+  margin: 20px; }
+
+.discografia {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap; }
+
+.imagenContacto {
+  width: 100%; }
+
+.queremosConocerte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; }
+
+p {
+  color: beige;
+  margin: 10px; }
+
+legend {
+  color: darkgoldenrod; }
+
+form {
+  color: beige; }
+
+fieldset {
+  width: 800px;
+  margin: 10px; }
+
+.mensaje {
+  width: 800px; }
+
+header h2 {
+  color: darkgoldenrod;
+  display: flex;
+  justify-content: center; }

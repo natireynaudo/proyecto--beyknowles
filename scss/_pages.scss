@@ -32,3 +32,73 @@ $estilo: (color: beige, tamFuente: 1rem);
     
 //*GALERÍA*//
 
+.galeríaBey {
+    height: 400px;
+    margin: 5px
+}
+
+.imagenesGaleria{
+    display: flex;
+    justify-content: center;
+    align-items:stretch;
+    flex-wrap: wrap;
+}
+
+//* DISCOGRAFÍA*//
+
+.album { 
+    height: 500px;
+    margin: 20px;
+}
+
+.algumSpotify {
+    height: 500px;
+    width: 500px;
+    margin: 20px;
+}
+
+.discografia{
+    display: flex;
+    justify-content: center;
+    align-items:stretch;
+    flex-wrap: wrap;
+}
+
+//* CONTACTO *//
+
+.imagenContacto{
+    width: 100%;
+}
+
+.queremosConocerte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+p{
+    color: $color-parrafo;
+    margin: 10px;
+}
+
+legend{
+    color: $color-palabras;
+}
+form {
+    color: $color-parrafo
+}
+fieldset{
+    width: 800px;
+    margin: 10px;
+}
+
+.mensaje{
+    width: 800px;
+}
+
+header h2{
+    color: $color-palabras;
+    display: flex;
+    justify-content: center;
+}
