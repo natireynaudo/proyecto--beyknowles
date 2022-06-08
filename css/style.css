@@ -62,6 +62,42 @@ body {
     justify-content: center;
     color: darkgoldenrod; }
 
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .contenedor {
+    display: grid;
+    grid-template-areas: "header header " "div div" "section section" "footer footer";
+    flex-wrap: wrap; }
+  .parrafoBio {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 10px; }
+  .imgBio {
+    display: flex;
+    justify-content: center; }
+  .sectionBey {
+    display: flex;
+    justify-content: center; } }
+
+@media only screen and (max-width: 599px) and (max-width: 599px) {
+  .fechasTours {
+    display: grid;
+    grid-template-areas: "header" "div" "section" "footer"; }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-items: center; }
+  .parrafoBio {
+    margin: 10px;
+    padding: 10px; }
+  .imgBio {
+    width: 350px;
+    margin: 5px; }
+  .sectionBey {
+    justify-content: center; }
+  .titFrase {
+    margin: 10px; } }
+
 /*TOURS*/
 /* MAP -GET */
 .listadoFechas, .Canciones {
@@ -137,3 +173,89 @@ header h2 {
   color: darkgoldenrod;
   display: flex;
   justify-content: center; }
+
+/*Video: adaptación solo celular, tablet ya está adaptado*/
+/*@media only screen and (max-width:599px) {
+    .discografia{
+        display: grid;
+        grid-template-areas:
+            "header"
+            "div"
+            "footer";
+    }
+}*/
+/* ADAPTACIÓN TABLET (tour)*/
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .fechasTours {
+    display: grid;
+    grid-template-areas: "header header" "div div" "div div" "footer footer";
+    display: flex;
+    flex-wrap: wrap; }
+  .imgTour {
+    width: 750px; }
+  .listadoFechas, .Canciones {
+    margin: 10px;
+    padding: 10px; } }
+
+/* ADAPTACIÓN A CELULAR (index) */
+@media only screen and (max-width: 599px) {
+  .fechasTours {
+    display: grid;
+    grid-template-areas: "header" "div" "div" "footer"; }
+  .imgTour {
+    width: 350px;
+    margin: 10px; }
+  .listadoFechas, .Canciones {
+    margin: 10px;
+    padding: 10px; } }
+
+/* ADAPTACIÓN A CELULAR (Galería) */
+@media only screen and (max-width: 599px) {
+  .galeriaImagenes {
+    display: grid;
+    grid-template-areas: "header" "div" "footer"; }
+  .galeríaBey {
+    width: 350px;
+    height: 350px; } }
+
+/* ADAPTACIÓN A DISCOGRAFIA (index) */
+@media only screen and (max-width: 599px) {
+  .bodyDisco {
+    display: grid;
+    grid-template-areas: "header" "div" "footer"; }
+  .album {
+    display: none; }
+  .algumSpotify {
+    width: 300px; } }
+
+/* ADAPTACIÓN TABLET (contacto)*/
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .queremosConocerte {
+    display: grid;
+    grid-template-areas: "header header " "div div" "div div" "footer footer";
+    display: flex;
+    flex-wrap: wrap; }
+  .imagenContacto {
+    width: 750px;
+    margin: 10px; }
+  .contactoFormulario {
+    width: 600px; }
+  .mensaje {
+    width: 700px; } }
+
+/* ADAPTACIÓN CELULAR (contacto)*/
+@media only screen and (max-width: 599px) {
+  .queremosConocerte {
+    display: grid;
+    grid-template-areas: "header" "div" "footer"; }
+  .imagenContacto {
+    width: 350px;
+    margin: 10px; }
+  .contactoFormulario {
+    width: 350px; }
+  form {
+    margin: 10px; }
+  .mensaje {
+    width: 300px; }
+  .parrafoCont {
+    margin: 10px; } }
