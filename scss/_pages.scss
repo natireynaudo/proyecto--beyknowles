@@ -3,32 +3,24 @@
 /* MAP -GET */
 $estilo: (color: beige, tamFuente: 1rem);
 
-.listadoFechas {
-    color: map-get($estilo, color);
-    font-size: map-get($estilo, tamFuente);
+
+.listadoFechas{
     list-style-type: none;
-    text-transform: uppercase;
+    color: beige;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-transform:uppercase;
     font-weight: bold;
     text-align: center;
-}
+} 
 
 /*EXTEND*/
 .Canciones {
     @extend .listadoFechas;
-    color: darkgoldenrod;
+    color: beige;
 }
 
-/* MIXIN */
 
-@mixin imagenesTours ($tamImg, $margen, $padding){
-    width: $tamImg;
-    margin: $margen;
-    padding: $padding
-}
-
-.imgTour{
-    @include imagenesTours(1350px, 10px, 10px);
-}
     
 //*GALERÍA*//
 
@@ -77,24 +69,29 @@ $estilo: (color: beige, tamFuente: 1rem);
     padding: 20px;
 }
 
-p{
-    color: $color-parrafo;
-    margin: 10px;
+.parrafoContacto{
+    color: darkgoldenrod;
+    font-size: 1rem;
 }
+
+
 
 legend{
     color: $color-palabras;
+    font-weight: bold;
 }
 form {
-    color: $color-parrafo
+    color: $color-parrafo;
+    font-weight: bold;
+    
 }
 fieldset{
-    width: 800px;
+    width: 500px;
     margin: 10px;
 }
 
 .mensaje{
-    width: 800px;
+    width: 500px;
 }
 
 header h2{
@@ -103,18 +100,6 @@ header h2{
     justify-content: center;
 }
 
-//*********ADAPTACIONES*************/
-
-/*Video: adaptación solo celular, tablet ya está adaptado*/
-/*@media only screen and (max-width:599px) {
-    .discografia{
-        display: grid;
-        grid-template-areas:
-            "header"
-            "div"
-            "footer";
-    }
-}*/
 
 /* ADAPTACIÓN TABLET (tour)*/
 
@@ -122,10 +107,10 @@ header h2{
     .fechasTours{
         display: grid;
         grid-template-areas:
-            "header header"
-            "div div"
-            "div div"
-            "footer footer";
+            "header"
+            "div"
+            "section"
+            "footer";
         display: flex;
         flex-wrap: wrap;
     }
@@ -135,8 +120,7 @@ header h2{
     }
 
     .listadoFechas{
-        margin: 10px;
-        padding: 10px;
+        text-align: center;
     }
 
 }
@@ -148,7 +132,7 @@ header h2{
         grid-template-areas:
             "header"
             "div"
-            "div"
+            "section"
             "footer";
     }
 
@@ -175,8 +159,8 @@ header h2{
     }
 
     .galeríaBey{
-        width: 350px;
-        height: 350px; 
+        width: 300px;
+        height: 300px; 
     }
 
 }
@@ -249,7 +233,9 @@ header h2{
 
     .contactoFormulario{
         width: 350px;
-    }
+    }  
+
+
 
     form{
         margin: 10px;
@@ -259,8 +245,11 @@ header h2{
         width: 300px;
     }
 
-    .parrafoCont{
+    .parrafoContacto{
         margin: 10px;
+        padding: 10px;
     }
+
+    
 
 }

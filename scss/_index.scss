@@ -98,10 +98,13 @@ body{
     #footer{
         grid-area: footer;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end ;
         color: $color-palabras;
     }
+
 }
+
+
 
 //************+*ADAPTACIONES***********//
 
@@ -137,6 +140,8 @@ body{
 
 }
 
+
+
 //* Index (celular)*//
 
 @media only screen and (max-width:599px) {
@@ -164,13 +169,10 @@ body{
             padding: 10px;
         }
     
-        .imgBio{
-            width: 350px;
-            margin: 5px;
-        }
-    
+
         .sectionBey{
             justify-content: center;
+            margin: 10px;
         }
     
         .titFrase{

@@ -59,7 +59,7 @@ body {
   body #footer {
     grid-area: footer;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     color: darkgoldenrod; }
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -90,33 +90,26 @@ body {
   .parrafoBio {
     margin: 10px;
     padding: 10px; }
-  .imgBio {
-    width: 350px;
-    margin: 5px; }
   .sectionBey {
-    justify-content: center; }
+    justify-content: center;
+    margin: 10px; }
   .titFrase {
     margin: 10px; } }
 
 /*TOURS*/
 /* MAP -GET */
 .listadoFechas, .Canciones {
-  color: beige;
-  font-size: 1rem;
   list-style-type: none;
+  color: beige;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center; }
 
 /*EXTEND*/
 .Canciones {
-  color: darkgoldenrod; }
-
-/* MIXIN */
-.imgTour {
-  width: 1350px;
-  margin: 10px;
-  padding: 10px; }
+  color: beige; }
 
 .galeríaBey {
   height: 400px;
@@ -152,56 +145,47 @@ body {
   align-items: center;
   padding: 20px; }
 
-p {
-  color: beige;
-  margin: 10px; }
+.parrafoContacto {
+  color: darkgoldenrod;
+  font-size: 1rem; }
 
 legend {
-  color: darkgoldenrod; }
+  color: darkgoldenrod;
+  font-weight: bold; }
 
 form {
-  color: beige; }
+  color: beige;
+  font-weight: bold; }
 
 fieldset {
-  width: 800px;
+  width: 500px;
   margin: 10px; }
 
 .mensaje {
-  width: 800px; }
+  width: 500px; }
 
 header h2 {
   color: darkgoldenrod;
   display: flex;
   justify-content: center; }
 
-/*Video: adaptación solo celular, tablet ya está adaptado*/
-/*@media only screen and (max-width:599px) {
-    .discografia{
-        display: grid;
-        grid-template-areas:
-            "header"
-            "div"
-            "footer";
-    }
-}*/
 /* ADAPTACIÓN TABLET (tour)*/
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .fechasTours {
     display: grid;
-    grid-template-areas: "header header" "div div" "div div" "footer footer";
+    grid-template-areas: "header" "div" "section" "footer";
     display: flex;
     flex-wrap: wrap; }
   .imgTour {
     width: 750px; }
   .listadoFechas, .Canciones {
-    margin: 10px;
-    padding: 10px; } }
+    text-align: center; } }
 
 /* ADAPTACIÓN A CELULAR (index) */
 @media only screen and (max-width: 599px) {
   .fechasTours {
     display: grid;
-    grid-template-areas: "header" "div" "div" "footer"; }
+    grid-template-areas: "header" "div" "section" "footer"; }
   .imgTour {
     width: 350px;
     margin: 10px; }
@@ -215,8 +199,8 @@ header h2 {
     display: grid;
     grid-template-areas: "header" "div" "footer"; }
   .galeríaBey {
-    width: 350px;
-    height: 350px; } }
+    width: 300px;
+    height: 300px; } }
 
 /* ADAPTACIÓN A DISCOGRAFIA (index) */
 @media only screen and (max-width: 599px) {
@@ -257,5 +241,6 @@ header h2 {
     margin: 10px; }
   .mensaje {
     width: 300px; }
-  .parrafoCont {
-    margin: 10px; } }
+  .parrafoContacto {
+    margin: 10px;
+    padding: 10px; } }
